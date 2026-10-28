@@ -1,0 +1,54 @@
+:root {
+  --bg: #0f1115;
+  --panel: #171a21;
+  --border: #262b36;
+  --text: #e7e9ee;
+  --muted: #9aa3b2;
+  --accent: #7c5cff;
+  --accent-text: #ffffff;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f8fa;
+    --panel: #ffffff;
+    --border: #e3e6ec;
+    --text: #161a22;
+    --muted: #5b6474;
+    --accent: #5b3df5;
+    color-scheme: light;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+a { color: var(--accent); }
+.wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+header.top { border-bottom: 1px solid var(--border); }
+header.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
+.brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: 0.08em; color: var(--text); text-decoration: none; }
+.mark { width: 28px; height: 28px; border-radius: 8px; background: var(--accent); color: var(--accent-text); display: grid; place-items: center; font-weight: 800; letter-spacing: 0; }
+nav a { color: var(--muted); text-decoration: none; margin-left: 18px; }
+nav a:hover { color: var(--text); }
+.hero { padding: 72px 0 40px; }
+.hero h1 { font-size: clamp(30px, 6vw, 46px); line-height: 1.15; margin: 0 0 16px; }
+.hero p { font-size: 18px; color: var(--muted); max-width: 640px; margin: 0 0 24px; }
+.pill { display: inline-block; padding: 4px 12px; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); font-size: 13px; margin-bottom: 18px; }
+.button { display: inline-block; background: var(--accent); color: var(--accent-text); padding: 10px 18px; border-radius: 10px; text-decoration: none; font-weight: 600; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; padding: 8px 0 40px; }
+.card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 18px; }
+.card h3 { margin: 0 0 6px; font-size: 17px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+section h2 { font-size: 24px; margin: 32px 0 12px; }
+.doc { padding: 40px 0 24px; }
+.doc h1 { font-size: 34px; margin: 0 0 4px; }
+.doc h2 { font-size: 21px; margin: 32px 0 8px; }
+.doc .updated { color: var(--muted); margin: 0 0 24px; }
+.doc li { margin: 4px 0; }
+footer { border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; padding: 20px 0 40px; margin-top: 40px; }
+footer a { color: var(--muted); margin-right: 16px; }

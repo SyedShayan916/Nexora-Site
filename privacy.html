@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NEXORA Privacy Policy</title>
+  <meta name="description" content="What NEXORA stores, where, and why.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./"><span class="mark">N</span>NEXORA</a>
+      <nav><a href="./">Home</a></nav>
+    </div>
+  </header>
+
+  <main class="wrap doc">
+    <h1>Privacy policy</h1>
+    <p class="updated">Last updated: 28 October 2026</p>
+
+    <p>NEXORA is a Windows app for keeping game and app accounts in an encrypted vault. This page explains what it stores, where, and why. In short: your passwords stay encrypted, we don't run ads or tracking, and we don't sell data.</p>
+
+    <h2>1. On your PC</h2>
+    <ul>
+      <li>Your vault (accounts, passwords, notes, tags, icons) is stored on your PC, encrypted with a key made from your master password. We never receive your master password or your vault.</li>
+      <li>Settings and a short activity log (for troubleshooting) are stored on your PC and never sent anywhere.</li>
+      <li>When you use sign-in for the Riot Client, Steam or Epic, NEXORA talks only to those apps on your own PC. The account you picked is typed into them locally.</li>
+    </ul>
+
+    <h2>2. NEXORA account (optional)</h2>
+    <p>You can use NEXORA without an account. If you create one, we store:</p>
+    <ul>
+      <li>your email address, an optional username and an optional profile picture;</li>
+      <li>for each PC you confirm with an email code: the PC's name and a one-way hash of a random identifier created on that PC;</li>
+      <li>your plan (Free or Pro) and your notifications.</li>
+    </ul>
+    <p>These are kept with our hosting provider, Supabase, which runs the database and the sign-in service. Sign-in codes are sent by email through our email provider.</p>
+
+    <h2>3. Work vaults (Pro)</h2>
+    <p>Shared accounts are encrypted on the owner's and members' PCs before they are uploaded. The server stores only:</p>
+    <ul>
+      <li>the encrypted accounts, which it cannot read;</li>
+      <li>the work vault's name, members' email addresses and roles, and the names and public keys of their PCs;</li>
+      <li>for changes that staff propose: an encrypted copy, plus a short summary for the owner that includes the account's name (never its login or password).</li>
+    </ul>
+
+    <h2>4. Google sign-in</h2>
+    <p>If you choose "Continue with Google", Google shares your name, email address, profile picture and Google account ID with NEXORA. We use them only to create your NEXORA account and sign you in.</p>
+
+    <h2>5. Google Drive backups</h2>
+    <ul>
+      <li>If you connect Google Drive, NEXORA asks for access only to files it creates itself (the <code>drive.file</code> permission). It cannot see your other files.</li>
+      <li>Backups are encrypted on your PC before they are uploaded.</li>
+      <li>The permission to keep backing up is stored in Windows Credential Manager on your PC. It is not sent to us. Disconnecting Drive in NEXORA revokes it.</li>
+    </ul>
+    <p>NEXORA's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. We don't use Google user data for advertising, we don't sell it, and nobody reads it except as needed for security or to comply with the law.</p>
+
+    <h2>6. What we don't do</h2>
+    <ul>
+      <li>No ads, no analytics, no tracking.</li>
+      <li>We don't sell or rent personal data, or share it except with the providers named above to run the service.</li>
+    </ul>
+
+    <h2>7. Keeping and deleting data</h2>
+    <ul>
+      <li>Data on your PC stays until you delete it or uninstall NEXORA.</li>
+      <li>Account data is kept while you have an account. To delete your NEXORA account and everything stored with it, contact us (below) from the account's email address, and we'll delete it within 30 days.</li>
+      <li>When an owner deletes a work vault, its shared accounts are deleted from the server.</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>NEXORA is not intended for children under 13, and we don't knowingly collect their data.</p>
+
+    <h2>9. Changes</h2>
+    <p>If this policy changes, we'll update the date above. Important changes will also be shown in the app.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions or deletion requests: <a href="https://github.com/SyedShayan916/Nexora-Site/issues">open an issue</a> on the NEXORA site's page.</p>
+  </main>
+
+  <footer>
+    <div class="wrap"><a href="./">Home</a><a href="https://github.com/SyedShayan916/Nexora-Site/issues">Contact</a>© 2026 NEXORA</div>
+  </footer>
+</body>
+</html>
